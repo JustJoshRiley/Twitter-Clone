@@ -1,0 +1,11 @@
+<div class="Form-Container">
+    <form class="Form-Content" action="/comment/{{comment.id}}/{{postId}}" method="post">
+        <legend class="Form-Title">Edit Comment</legend>
+        <div class="Label-Input">
+            <textarea name="content" class="form-control" placeholder="A Reply Goes Here.">{{comment.content}}</textarea>
+        </div>
+        <div>
+            <button type="submit" class="submit-button" name="button">Update</button>
+        </div>
+    </form>
+</div>

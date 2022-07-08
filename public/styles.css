@@ -1,0 +1,275 @@
+html {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100vw;
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.Navbar-Container {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 90%;
+}
+.HomeButton {
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-bottom: 1px solid transparent;
+    transition: 1s ease;
+}
+.Auth {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.HomeButton:hover {
+    border-bottom: 1px solid lightcoral;
+}
+.NewPostButton {
+    color: lightcoral;
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Post-Container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 2.5%;
+    overflow-y: scroll;
+}
+.Post {
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 2.5%;
+    padding: 2.5%;
+}
+.Post div h3 {
+    color: lightcoral;
+}
+.PostHeader a {
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: lightskyblue;
+}
+.Summary {
+    color: lightcoral;
+}
+.Vote-Container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Vote {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Vote button {
+    background-color: transparent;
+    color: lightpink;
+    width: 100px;
+    height: 40px;
+}
+.VoteScore {
+    color: lightseagreen;
+}
+.Post-Info-Container {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding-top: 2.5%;
+}
+.DeletePostContainer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.Post-Info {
+    border: 1px solid lightskyblue;
+    border-radius: 10px;
+    width: 50%;
+    height: fit-content;
+    margin-bottom: 2.5%;
+    padding: 2.5%;
+}
+.Post-Info h3 {
+    color: lightcoral;
+}
+.Post-Info h2 {
+    color: lightblue;
+}
+.Post-Info p {
+    color: lightcoral;
+}
+.Form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 2.5%;
+}
+.reply-form {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.reply-form legend {
+    color: lightcoral;
+}
+.reply-form textarea {
+    background-color: transparent;
+    border: 1px solid lightcoral;
+}
+.reply-form button {
+    background-color: transparent;
+    border: 1px solid lightcoral;
+    height: 35px;
+    width: 70px;
+    border-radius: 10px;
+    color: lightcoral;
+}
+.Comment {
+    border: 1px solid pink;
+    color: black;
+    height: fit-content;
+    padding: 2.5%;
+    color: lightcoral;
+    margin-bottom: 2.5%;
+    border-radius: 10px;
+}
+.Comment-Indent {
+    margin-left: 20px;
+}
+.Comment h2 {
+    color: lightskyblue;
+}
+.Comment p {
+    display: flex;
+    justify-content: center;
+}
+.Reply {
+    display: flex;
+    justify-content: flex-end;
+}
+.reply {
+    color: lightsalmon;
+    text-decoration: none;
+}
+.Form-Container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5%;
+    align-items: center;
+}
+.Form-Content {
+    border: 1px solid lightcoral;
+    height: fit-content;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+.Form-Title {
+    color: lightcoral;
+}
+.Form-Content .Label-Input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 5%;
+    color: lightcoral;
+}
+.Form-Content .Label-Input input {
+    background-color: lightcoral;
+}
+textarea {
+    background-color: black;
+}
+.Form-Content button {
+    background-color: transparent;
+    border: 1px solid lightcoral;
+    color: lightcoral;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightskyblue;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: lightskyblue;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: lightskyblue;
+}
+.Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+}
+.Profile-Page {
+    min-width: 80%;
+    max-width: 80%;
+    height: 80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid lightgreen;
+    margin-top: 2.5%;
+    border-radius: 10px;
+}
+.Welcome-Text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5%;
+}
+.Username {
+    width: fit-content;
+    border-bottom: 1px solid lightsalmon;
+    color: lightgreen;
+}
+.Post-Profile-Container {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

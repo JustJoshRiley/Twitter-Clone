@@ -1,0 +1,15 @@
+<div class="Form-Container">
+    <form class="Form-Content" action="/posts/edit/{{post._id}}" method="post">
+        <legend class="Form-Title">Edit Comment</legend>
+        <div class="Label-Input">
+            <label for="post-title">Title</label>
+            <textarea name="title" class="form-control" placeholder="A description of your event.">{{post.title}}</textarea>
+        </div>
+        <div class="Label-Input">
+            <textarea name="summary" class="form-control" placeholder="A description of your event.">{{post.summary}}</textarea>
+        </div>
+        <div>
+            <button type="submit" class="submit-button" name="button">Update</button>
+        </div>
+    </form>
+</div>

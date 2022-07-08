@@ -1,0 +1,15 @@
+<div class="Profile">
+    <div class="Profile-Page">
+        {{#if_eq user.username currentUser.username}}
+            <div>
+                <div class="Welcome-Text">
+                    <h1 class="Username">Welcome {{user.username}} 🥳</h1>
+                </div>
+            </div>
+        {{else}}
+            <div class="Welcome-Text">
+                <h1 class="Username">t/{{user.username}}</h1>
+            </div>
+        {{/if_eq}}
+    </div>
+</div>

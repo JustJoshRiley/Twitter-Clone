@@ -1,0 +1,28 @@
+<div class="Post-Info-Container">
+    <div class="Post-Info">
+        {{#if_eq post.author.username currentUser.username}}
+        <div class="DeletePostContainer">
+            <a href="/posts/{{post._id}}/edit">✍️</a>
+            <a href="/posts/{{post._id}}/delete/{{currentUser._id}}">🗑</a>
+        </div>
+        {{/if_eq}}
+        <h3>t/{{post.author.username}}</h3>
+        <h2 class="lead">{{post.title}}</h2>
+        <p>{{post.summary}}</p>
+        {{#if currentUser}}
+        <div class="Form">
+            <form class="reply-form" action="/posts/{{post._id}}/comments" method="post">
+                <legend>Reply</legend>
+                <textarea class='form-control' name="content" placeholder="Comment"></textarea>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+        {{/if}}
+        <div>
+            <h2>Comments</h2>
+            {{#each post.comments}}
+                {{> comment comment=this postId=../post._id}}
+            {{/each}}
+        </div>
+    </div>
+</div>

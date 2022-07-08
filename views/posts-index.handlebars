@@ -1,0 +1,30 @@
+<div class="Post-Container">
+{{#each posts}}
+        <div class="Post">
+            <div>
+                <h3>
+                    <a href="/users/{{this.author.username}}">
+                        t/{{this.author.username}}
+                    </a>
+                </h3>
+            </div>
+            <div class="PostHeader"><a href="/posts/{{this._id}}">{{this.title}}</a></div>
+            <p class="Summary" target="_blank">{{this.summary}}</p>
+            <div class="Vote-Container">
+                <div class="Vote">
+                    <form class="vote-up" data-id="{{this._id}}">
+                        <button type="submit">Like</button>
+                    </form>
+                    |
+                    <h2 class="VoteScore">
+                        {{this.voteScore}}
+                    </h2>
+                    |
+                    <form class="vote-down" data-id="{{this._id}}">
+                        <button type="submit">Dislike</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+{{/each}}
+</div>

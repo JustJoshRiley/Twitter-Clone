@@ -1,0 +1,27 @@
+<div class="Form-Container">
+    <form class="Form-Content" action="/posts/new" method="post">
+        <legend class="Form-Title">New Post</legend>
+        <div class="Label-Input">
+            <label for="post-title">Title</label>
+            <input
+            type="text"
+            name="title"
+            class="post-input"
+            id="post-title"
+            placeholder="Title"
+            />
+        </div>
+        <div class="Label-Input">
+            <label for="post-summary">Summary</label>
+            <textarea
+            name="summary"
+            class="post-input"
+            id="post-summary"
+            placeholder="Summary"
+            ></textarea>
+        </div>
+        <div class="text-right">
+            <button type="submit" class="submit-button">Create Post</button>
+        </div>
+    </form>
+</div>
