@@ -6,9 +6,17 @@
                     <h1 class="Username">Welcome {{user.username}} 🥳</h1>
                 </div>
             </div>
+            {{#each user.posts}}
+                <div>
+                    <div>{{this.title}}</div>
+                </div>
+            {{/each}}
         {{else}}
             <div class="Welcome-Text">
                 <h1 class="Username">t/{{user.username}}</h1>
+                <form>
+                    <button type="submit" class="Submit-Button">Follow</button>
+                </form>
             </div>
         {{/if_eq}}
     </div>

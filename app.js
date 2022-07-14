@@ -36,9 +36,9 @@ app.use(checkAuth);
 require('./data/twitter-db');
 require('./controllers/posts')(app);
 require('./controllers/comments')(app);
-require('./controllers/auth.js')(app);
-require('./controllers/replies.js')(app);
-require('./controllers/profile')(app)
+require('./controllers/auth')(app);
+require('./controllers/replies')(app);
+require('./controllers/users')(app)
 
 app.get('/', (req, res) => {
     const token = req.cookies.nToken;

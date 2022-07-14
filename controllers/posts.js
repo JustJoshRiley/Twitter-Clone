@@ -12,10 +12,10 @@ module.exports = (app) => {
     app.post('/posts/new', (req, res) => {
         if (req.user) {
             const userId = req.user._id;
+            const post = new Post(req.body);
             post.upVotes = [];
             post.downVotes = [];
             post.voteScore = 0;
-            const post = new Post(req.body);
             post.author = userId;
             post
                 .save()
